@@ -1,6 +1,7 @@
 name: Dependabot auto-merge
 on:
   pull_request:
+  workflow_dispatch:  # 手動実行を有効にする
   schedule:
     - cron: '0 0 * * 0'  # 毎週日曜日の00:00 UTCに実行
 
